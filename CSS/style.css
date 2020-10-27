@@ -1,0 +1,492 @@
+/* STYLES GENERAUX */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Handlee', cursive;
+    background: url('../IMG/cupcake_pattern_bg.jpg') repeat;
+}
+h1, h2, h3, h4 {
+    font-family: 'Grand Hotel', cursive;
+    color: #1A1F1E;
+}
+h1 {    
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin: 0;
+}
+h2.titre {    
+    background: url(../IMG/h3BG.png) no-repeat center;
+    line-height: 15vh;
+    text-shadow: 0 0 8px white;
+}
+h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+section {
+    height: 100vh;
+    text-align: center;
+}
+article{
+    border-radius: 10px;
+    padding: 20px;
+}
+a{    
+    text-decoration: none;
+}
+p{
+    font-size: 1.1em;
+}
+.souligne{
+    text-decoration: underline;
+}
+.manuscrit{
+    font-family: 'Grand Hotel', cursive;
+}
+.hsep{    
+    height: 1.3125rem;
+    width: 100%;
+    background-image: url('../IMG/hseparator.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1.2rem;
+}
+
+/* DIFFERENTES COULEURS */
+.blanc{
+    color: #fff;
+}
+.rose{
+    color: #F89FA1;
+}
+.rosefonce{
+    color: #D11E48;
+}
+
+/* BOUTON ARTICLES */
+.bouton {
+    display: inline-block;
+    padding: 10px;
+    border: 1px dashed;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+/* FLECHE REMONTER HAUT SITE */
+body .arrow-up {
+    position: fixed;    
+    bottom: 50px;
+    right: 10px;
+    z-index: 1000;
+}
+body .arrow-up a{
+    text-decoration: none;
+    color: #1A1F1E;
+    font-size: 2em;
+}
+body .arrow-up a:hover{
+    color: #D11E48;
+    transition: 0.5s;    
+}
+
+
+/* SECTION INTRO */
+body>section#intro {
+    background: url('../IMG/logo_white.png') no-repeat center 2vh, rgba(248, 159, 161, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+body>section#intro h1{
+    color: #D11E48;
+    font-weight: normal;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+}
+body>section#intro a {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: normal;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 30px;
+    border: 1px solid #94654C;
+    border-radius: 16px;
+    padding: 10px;
+    background-color: #94654C;
+    width: 400px;
+    text-align: center;
+}
+body>section#intro a i {
+    margin: 0 20px 0 20px;
+}
+body>section#intro a:hover, body>section#intro a:focus{
+    color: #94654C;
+    transition: 0.5s;
+    background-color: #FAD6D6;
+}
+
+/* SECTION OVERVIEW */
+body>section#overview {
+    background-color: rgba(148, 101, 76, 0.95);
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-end; */
+    padding-bottom: 20px;
+}
+body>section#overview article{
+    /* border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 16px; */
+    width: 45vw;
+    height: 80vh;
+    position: relative;
+    bottom: -70px;
+}
+/* LE BOUTON */
+body>section#overview article a.bouton, body>section#overview article a.bouton {
+    background-color: #FAD6D6;
+    color: #D11E48;
+    transition: 0.5s;
+}
+body>section#overview article a.bouton:hover, body>section#overview article a.bouton:active {
+    background-color: #D11E48;
+    color: #FAD6D6;
+    transition: 0.5s;
+}
+body>section#overview article.ovwdroite {
+    background: url('../IMG/cupcakes_dark.jpg') no-repeat center;
+    background-size: cover;
+}
+body>section#overview article:first-child{
+    border-right: 2px solid #F89FA1;
+}
+/* ! MENU */
+body>section#overview>#menu{
+    /* width: 100vw;
+    height: 10vh; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('../IMG/zig-zag-top.png') repeat-x top, rgba(250, 214, 214, 1);
+    z-index: 1000;
+    /* background-color:  */
+}
+body>section#overview>#menu>nav>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    height: 60px;
+}
+body>section#overview>#menu>nav>ul>li>a{
+    position: relative;
+    top: 45%;
+    color: #1A1F1E;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* AU SURVOL */
+body>section#overview>#menu>nav>ul>li>a:hover{
+    color: #D11E48;
+    transition: 0.5s;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* ! /MENU */
+
+/* SECTION OFFRES */
+body>section#offres {
+    background-color: rgba(250, 189, 189, 0.95);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gauche {
+    width: 30vw;
+    background: url(../IMG/pointing_finger.png) no-repeat center;
+    background-size: contain;
+}
+.droite {
+    width: 68vw;
+}
+.flexcontrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexcontrow > .flexcontcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexcontrow > img {
+    background-color: #FAD6D6;
+    border-radius: 5px;
+    padding: 5px;
+}
+.flexcontrow > i {
+    margin: 0 25px 0 25px;
+    font-size: 2em;
+}
+.flexcontrow > .flexcontcol > .offpr {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.flexcontrow > .flexcontcol > .offpr > div {
+    height: 50px;
+    line-height: 50px;
+    padding: 5px;
+}
+.flexcontrow > .flexcontcol > .offpr > .offer {
+    width: 200px;
+    background-color: #FAD6D6;
+    color: #1A1F1E;
+    border-radius: 5px 0 0 5px;
+}
+.flexcontrow > .flexcontcol > .offpr > .price {
+    width: 80px;
+    background-color: #1A1F1E;
+    color: #FAD6D6;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.art15vh{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+.art30vh{
+    height: 30vh;
+}
+
+/* SECTION SLIDESHOW */
+body>section#slideshow {
+    background-color: rgba(250, 214, 214, 0.95);
+}
+.splide {
+    top: 12%;
+}
+
+/* SECTION ABOUT-US */
+body>section#about-us {
+    background-color: rgba(254, 252, 208, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* LES CARTES QUI SOMMES NOUS
+===== Réalisé par Alvaro Montoro
+===== https://codepen.io/alvaromontoro/pen/ebPEWb */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.center {
+  position: absolute;
+  top: 90% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  /* background: linear-gradient(#F89FA1, #FAD6D6); */
+  background-color: #E5D4A3;
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+.additional2 {
+    background-color: #DEC68A !important;
+}
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.card .additional .user-card img {
+    height: 250px;
+}
+/* .card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+} */
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background:  rgba(248, 159, 161, 0.8);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+  
+  font-family: 'Poppins', sans-serif;
+}
+
+.card .additional .more-info h1 {
+  color: #1A1F1E;
+  margin-bottom: 0;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  color: #1A1F1E;
+  font-size: 1rem;
+  
+  background:rgba(248, 159, 161, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #1A1F1E;
+  
+  background: rgba(248, 159, 161, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+.card .additional .stats > div > span {
+    font-size: 0.5em;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+  
+  font-family: 'Grand Hotel', cursive;
+  font-size: 1.5em;
+  color: #D11E48;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+/* FOOTER */
+footer {
+    height: 6vh;
+    line-height: 6vh;
+    text-align: center;
+    margin-top: -48px;
+    background: rgba(148, 101, 76, 0.95);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img {
+    width: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px;
+    border-radius: 5px;
+}

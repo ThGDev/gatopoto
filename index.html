@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site à mwa</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="./JS/smoothScroll-ES5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+</head>
+<body>
+    <!-- BOUTON SCROLL TO TOP -->
+    <div class="arrow-up"><a href="#intro" scrollTo="intro" class="scrollOnClick"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+    <!-- INTRO -->
+    <section id="intro">
+        <h1>Préparateurs de bien-être <span class="souligne">since très longtemps</span> !</h1>
+        <a href="#overview" scrollTo="overview" class="scrollOnClick"><i class="far fa-hand-point-down"></i> Mais que faisons-nous ? <i class="far fa-hand-point-down"></i></a>
+        
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+        <!-- LE MENU EN FIXED -->
+        <div id="menu">
+            <nav>
+                <ul class="manuscrit">
+                    <li><a href="#intro" scrollTo="intro" class="scrollOnClick">Intro</a></li>
+                    <li><a href="#overview" scrollTo="overview" class="scrollOnClick">Que faisons-nous ?</a></li>
+                    <li><a href="#offres" scrollTo="offres" class="scrollOnClick">Nos offres</a></li>
+                    <li><a href="#slideshow" scrollTo="slideshow" class="scrollOnClick">Quelques détails</a></li>
+                    <li><a href="#about-us" scrollTo="about-us" class="scrollOnClick">Qui sommes-nous ?</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article class="blanc">
+            <h2 class="rose">Les Gâteaux, c'est cool, c'est bon, mangez-en !</h2>
+            <p>Cupcake ipsum dolor sit amet sweet roll. Caramels I love gummi bears chocolate. Topping cookie cheesecake cotton candy donut croissant.</p>
+            <p>Topping dessert lollipop chocolate bar sweet roll. Lemon drops tootsie roll jujubes soufflé jelly-o macaroon powder macaroon. Chocolate wafer toffee candy canes candy canes marshmallow I love. Fruitcake macaroon gummi bears sweet sweet sweet roll pastry I love.</p>
+            <p>Candy canes cookie icing lollipop bear claw. Candy canes biscuit oat cake bonbon sweet. Toffee sweet roll topping marzipan lemon drops oat cake cake toffee.</p>
+            <p>Candy canes I love gingerbread danish dessert wafer. Halvah sweet roll apple pie lollipop topping sweet roll tootsie roll. Wafer dessert jujubes jelly apple pie oat cake tiramisu marshmallow.</p>
+            <div class="hsep"></div>
+            <a href="#offres" scrollTo="offres" class="scrollOnClick bouton manuscrit rose">Va voir nos offres copain !</a>
+
+        </article>
+        <article class="ovwdroite"></article>
+    </section>
+
+    <!-- OFFRES -->
+    <section id="offres">
+        <h2 class="rosefonce art15vh titre">Regarde tout ce qu'on peut faire pour toi</h2>
+        <div class="gauche"></div>
+        <div class="droite">
+            <!-- <h1 class="rosefonce art15vh">Regarde tout ce qu'on peut faire pour toi</h1> -->
+            <article>
+                <h3>On te livre à domicile</h3>
+                <div class="hsep"></div>
+                <div class="flexcontrow">
+                    <img src="./IMG/delivery.svg" alt="icone livraison" width="50px">
+                    <i class="far fa-hand-point-right rosefonce"></i>
+                    <div class="flexcontcol">
+                        <div class="offpr">
+                            <div class="offer">à partir de 5 gâteaux</div>
+                            <div class="price">30€</div>
+                        </div>
+                        <div class="offpr">
+                            <div class="offer">à partir de 10 gâteaux</div>
+                            <div class="price">55€</div>
+                        </div>
+                        <div class="offpr">
+                            <div class="offer">à partir de 15 gâteaux</div>
+                            <div class="price">80€</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="">
+                <h3>Tu viens les chercher en boutique</h3>
+                <div class="hsep"></div>
+                <div class="flexcontrow">
+                    <img src="./IMG/shop.svg" alt="icone boutique" width="50px">
+                    <i class="far fa-hand-point-right rosefonce"></i>
+                    <div class="flexcontcol">
+                        <div class="offpr">
+                            <div class="offer">Nos gâteaux à partir de</div>
+                            <div class="price">5€</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="">
+                <h3>On vient cuisiner chez toi</h3>
+                <div class="hsep"></div>
+                <div class="flexcontrow">
+                    <img src="./IMG/chef.svg" alt="icone boutique" width="50px">
+                    <i class="far fa-hand-point-right rosefonce"></i>
+                    <div class="flexcontcol">
+                        <div class="offpr">
+                            <div class="offer">Forfait matinée</div>
+                            <div class="price">200€</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SLIDESHOW -->
+    <section id="slideshow">
+        <h2 class="rosefonce art15vh titre">Regarde si c'est pas beau ce qu'on fait chez nous !</h2>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful1.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful2.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful3.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful4.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful5.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful6.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful7.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="./IMG/slider/beautiful8.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT-US -->
+    <section id="about-us">
+        <!-- JANE DOE -->
+        <div class="card">
+              <div class="additional">
+                <div class="user-card">
+                  <div class="level center">
+                    Boss
+                  </div>
+                  <img src="./IMG/hipster-chef-woman.png" alt="">
+                </div>
+                <div class="more-info">
+                  <h1>Jane Doe</h1>
+                  <div class="coords">
+                    <span>A créé la boite en 2019</span><br>  
+                    <span>La boss des cakes <i class="fas fa-hand-point-right"></i> </span>
+                    <span>Arles</span>
+                  </div>
+                  <div class="stats">
+                    <div>
+                      <div class="title">Coffee</div>
+                      <i class="fa fa-coffee"></i>
+                      <div class="value infinity">∞</div>
+                    </div>
+                    <div>
+                      <span><i class="far fa-envelope"></i> jane.doe@bla.fr</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="general">
+                <h1>Jane Doe</h1>
+                <p>La reine des cupcakes qui tuent !</p>
+              </div>
+        </div>
+        <!-- JOHN DOE -->
+        <div class="card">
+            <div class="additional additional2">
+              <div class="user-card">
+                <div class="level center">
+                  Sous-Boss
+                </div>
+                <img src="./IMG/hipster-chef-man.png" alt="">
+              </div>
+              <div class="more-info">
+                <h1>John Doe</h1>
+                <div class="coords">
+                  <span>A rejoint la boite en 2020</span><br>  
+                  <span>Le boss des gâteaux <i class="fas fa-hand-point-right"></i> </span>
+                  <span>Arles</span>
+                </div>
+                <div class="stats">
+                  <div>
+                    <div class="title">Coffee</div>
+                    <i class="fa fa-coffee"></i>
+                    <div class="value infinity">∞</div>
+                  </div>
+                  <div>
+                    <span><i class="far fa-envelope"></i> john.doe@bla.fr</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="general">
+              <h1>John Doe</h1>
+              <p>Le roi des gâteaux en tout genre</p>
+            </div>
+        </div>            
+    </section>
+
+<!-- FOOTER -->
+    <footer>
+        <!-- <p><i class="fas fa-bomb"></i> C'est la fin du site... Tu sais... Le footer <i class="fas fa-shoe-prints"></i>... eh oui... dommage hein... <i class="fab fa-angellist"></i></p> -->
+        <img src="./IMG/safety-suit.svg" alt=""><img src="./IMG/cleaning-spray.svg" alt=""><img src="./IMG/washing-hands2.svg" alt="">
+        <p> Site garanti sans coronavirus </p>
+        <img src="./IMG/washing-hands.svg" alt=""><img src="./IMG/clean.svg" alt=""><img src="./IMG/no-virus.svg" alt="">
+    </footer> 
+
+
+<script>new Splide( '.splide', {
+	type     : 'loop',
+    perPage    : 3,
+    height     : '70vh',
+    focus    : 'center',
+    autoheight : true,
+	cover      : true,
+	breakpoints: {
+		height: '6rem',
+	}
+}  ).mount();</script>
+<script src="./JS/app.js"></script>
+</body>
+</html>
